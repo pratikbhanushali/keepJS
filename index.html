@@ -41,26 +41,20 @@
 
 <p><em>Method name:</em> <strong>keep.set()</strong></p>
 
-<p><em>Parameters:</em>
-    <strong>name</strong>     Identifier used to store a value in browser storage.
-    <strong>value</strong>    Value to be stored in the browser storage.
-    <strong>storage</strong>  Optional: Defaults to Cookies. Possible values are 'C'(Cookies) / 'L'(localStorage) / 'S'(session storage).
-    <strong>sess</strong>     Optional: Defaults to true. Used to set cookie as session cookie or persistant cookie. Possible values are true / false.
-    <strong>expires</strong>  Optional: Sets a cookie with an expiry. This key is used only when <a href="https://github.com/sess" class="user-mention">@sess</a> = true. Use the Javascript Date function to pass expiry E.g. ("Mon, 4 Nov 2100 13:00:00 GMT")
-    <strong>path</strong>     Optional: Defaults to '/'.
-    <strong>encrypt</strong>  Optional: This key if set to boolean true, will encrypt data that goes into store.</p>
+<p><em>Parameters:</em><br>
+    <strong>name</strong> Identifier used to store a value in browser storage.<br>
+    <strong>value</strong> Value to be stored in the browser storage.<br>
+    <strong>storage</strong> Optional: Defaults to Cookies. Possible values are 'C'(Cookies) / 'L'(localStorage) / 'S'(session storage).<br>
+    <strong>sess</strong> Optional: Defaults to true. Used to set cookie as session cookie or persistant cookie. Possible values are true / false.<br>
+    <strong>expires</strong> Optional: Sets a cookie with an expiry. This key is used only when <strong>sess</strong> = true. Use the Javascript Date function to pass expiry E.g. ("Mon, 4 Nov 2100 13:00:00 GMT")<br>
+    <strong>path</strong> Optional: Defaults to '/'.<br>
+    <strong>encrypt</strong> Optional: This key if set to boolean true, will encrypt data that goes into store.  </p>
 
-<p>P.S : <strong>encrypt</strong> - DO NOT SET THIS TO true IF YOU WANT TO USE COOKIE DATA SERVER-SIDE.</p>
+<p>P.S : <strong>encrypt</strong> - DO NOT SET THIS TO true IF YOU WANT TO USE COOKIE DATA SERVER-SIDE.  </p>
 
-<p><em>Example :</em></p>
+<p><em>Example :</em>  </p>
 
-<p>keep.set({ 
-      <strong>name:</strong> "cookie-name", 
-      <strong>value:</strong> "Hello World!", 
-      <strong>sess:</strong> false, 
-      <strong>expires:</strong> "Mon, 4 Nov 2100 13:00:00 GMT", 
-      <strong>encrypt:</strong> true 
-});</p>
+<p>keep.set({ <strong>name:</strong> "cookie-name", <strong>value:</strong> "Hello World!", <strong>sess:</strong> false, <strong>expires:</strong> "Mon, 4 Nov 2100 13:00:00 GMT", <strong>encrypt:</strong> true });  </p>
 
 <p><a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a></p>
 
