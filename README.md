@@ -21,7 +21,8 @@ _Parameters:_
 **encrypt**&nbsp;&nbsp;&nbsp;_Optional: This key if set to boolean true, will encrypt data that goes into store._      
 
 _P.S :_ **encrypt** - Do not SET this key to **true** if you want to use `cookie` data on the server-side.         
-
+       
+    
 
 **1. GET Data** - `keep.set()`      
 
@@ -31,4 +32,4 @@ _Example :_
 
 _Parameters:_   
 
-**name**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_Identifier used to store a value in browser storage._ 
+**name**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_Identifier used to store a value in browser storage._   
