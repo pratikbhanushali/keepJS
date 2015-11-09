@@ -1,33 +1,36 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>KeepJS by pratikbhanushali</title>
+    <meta name="description" content="KeepJS : Keep is a simple Javascript Library used to manage your Browser Storage. It uses Cookies, Local Storage and Session Storage for this purpose">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <meta name="viewport" content="width=device-width">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>KeepJS</title>
   </head>
+
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>KeepJS</h1>
-        <p>Keep is a simple Javascript Library used to manage your Browser Storage. It uses Cookies, Local Storage and Session Storage for this purpose</p>
 
-        <p class="view"><a href="https://github.com/pratikbhanushali/keepJS">View the Project on GitHub <small>pratikbhanushali/keepJS</small></a></p>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/pratikbhanushali/keepJS">View on GitHub</a>
 
+          <h1 id="project_title">KeepJS</h1>
+          <h2 id="project_tagline">Keep is a simple Javascript Library used to manage your Browser Storage. It uses Cookies, Local Storage and Session Storage for this purpose</h2>
 
-        <ul>
-          <li><a href="https://github.com/pratikbhanushali/keepJS/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/pratikbhanushali/keepJS/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/pratikbhanushali/keepJS">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/pratikbhanushali/keepJS/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/pratikbhanushali/keepJS/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
         <h3>
 <a id="welcome-to-github-page-for-keepjs" class="anchor" href="#welcome-to-github-page-for-keepjs" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to GitHub Page for KeepJS.</h3>
 
@@ -35,56 +38,53 @@
 
 <p><strong>Functionalities:</strong></p>
 
-<ol>
-<li>SET Data:</li>
-</ol>
+<p><strong>1. SET Data</strong> - <code>keep.set()</code></p>
 
-<p><em>Method name:</em> <strong>keep.set()</strong></p>
+<p><em>Example :</em>   </p>
 
-<p><em>Parameters:</em>     </p>
+<p><code>keep.set({ name : _"identifier-name"_, value: _"Hello World!"_, sess: _false_, expires: _"Mon, 4 Nov 2100 13:00:00 GMT"_, storage: _"C"_,  encrypt: _true_ });</code></p>
 
-<p><strong>name</strong>    Identifier used to store a value in browser storage.<br>
-<strong>value</strong>   Value to be stored in the browser storage.<br>
-<strong>storage</strong> Optional: Defaults to Cookies. Possible values are 'C'(Cookies) / 'L'(localStorage) / 'S'(session storage).<br>
-<strong>sess</strong>    Optional: Defaults to true. Used to set cookie as session cookie or persistant cookie. Possible values are true / false.<br>
-<strong>expires</strong> Optional: Sets a cookie with an expiry. This key is used only when <strong>sess</strong> = true. Use the Javascript Date function to pass expiry E.g. ("Mon, 4 Nov 2100 13:00:00 GMT")<br>
-<strong>path</strong>    Optional: Defaults to '/'.<br>
-<strong>encrypt</strong> Optional: This key if set to boolean true, will encrypt data that goes into store.  </p>
+<p><em>Parameters:</em>   </p>
 
-<p>P.S : <strong>encrypt</strong> - DO NOT SET THIS TO true IF YOU WANT TO USE COOKIE DATA SERVER-SIDE.  </p>
+<p><strong>name</strong>       <em>Identifier used to store a value in browser storage.</em><br>
+<strong>value</strong>       <em>Value to be stored in the browser storage.</em><br>
+<strong>storage</strong>   <em>Optional: Defaults to Cookies. Possible values are  'C'(Cookies) / 'L'(localStorage) / 'S'(session storage).</em><br>
+<strong>sess</strong>       <em>Optional: Defaults to true. Used to set cookie as session cookie or persistant cookie. Possible values are true / false.</em><br>
+<strong>expires</strong>   <em>Optional: Sets a cookie with an expiry. This key is used only when sess = true. Use the Javascript Date function to pass expiry E.g. ("Mon, 4 Nov 2100 13:00:00 GMT")</em><br>
+<strong>path</strong>        <em>Optional: Defaults to '/'.</em><br>
+<strong>encrypt</strong>   <em>Optional: This key if set to boolean true, will encrypt data that goes into store.</em>      </p>
 
-<p><em>Example :</em>  </p>
+<p><em>P.S :</em> <strong>encrypt</strong> - Do not SET this key to <strong>true</strong> if you want to use <code>cookie</code> data on the server-side.<br>
+   
+   
+       </p>
 
-<p>keep.set({ <strong>name:</strong> "cookie-name", <strong>value:</strong> "Hello World!", <strong>sess:</strong> false, <strong>expires:</strong> "Mon, 4 Nov 2100 13:00:00 GMT", <strong>encrypt:</strong> true });  </p>
+<p><strong>2. GET Data</strong> - <code>keep.get()</code>      </p>
 
-<p><a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a></p>
+<p><em>Example :</em>     </p>
 
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<p><code>keep.get({ name : _"identifier-name"_ });</code>    </p>
 
-<p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
+<p><em>Parameters:</em>   </p>
 
-<h3>
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span class="octicon octicon-link"></span></a>Creating pages manually</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<p><strong>name</strong>       <em>Identifier used to store a value in browser storage.</em>  </p>
 
 <h3>
 <a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
 
 <p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
       </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/pratikbhanushali">pratikbhanushali</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">KeepJS maintained by <a href="https://github.com/pratikbhanushali">pratikbhanushali</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
+
     
+
   </body>
 </html>
