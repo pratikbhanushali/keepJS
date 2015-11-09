@@ -25,7 +25,7 @@ _P.S :_ **encrypt** - Do not SET this key to **true** if you want to use `cookie
 &nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;    
 
-**1. GET Data** - `keep.set()`      
+**2. GET Data** - `keep.get()`      
 
 _Example :_     
 
