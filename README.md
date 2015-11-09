@@ -8,7 +8,7 @@ You can **SET**, **GET**, **DELETE** your data from browser storages.
 
 _Example :_   
 
-`keep.set({ name : _"identifier-name"_, value: _"Hello World!"_, sess: _false_, expires: _"Mon, 4 Nov 2100 13:00:00 GMT"_, storage: _"C"_,  encrypt: _true_ });`
+`keep.set({ name : "identifier-name", value: "Hello World!", sess: false, expires: "Mon, 4 Nov 2100 13:00:00 GMT", storage: "C",  encrypt: true });`
 
 _Parameters:_   
 
@@ -29,7 +29,7 @@ _P.S :_ **encrypt** - Do not SET this key to **true** if you want to use `cookie
 
 _Example :_     
 
-`keep.get({ name : _"identifier-name"_ });`    
+`keep.get({ name : "identifier-name" });`    
 
 _Parameters:_   
 
