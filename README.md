@@ -1,7 +1,7 @@
 # keepJS
 Keep is a simple Javascript Library used to manage your Browser Storage. It uses Cookies, Local Storage and Session Storage for this purpose.
 
-You can # SET, # GET, # DELETE your data from browser storages.
+You can SET, GET, DELETE your data from browser storages.
 
 Examples:
 
@@ -17,7 +17,7 @@ Parameters -
 * 			@path 		Optional: Defaults to '/'.
 * 			@encrypt Optional: This key if set to boolean true, will encrypt data that goes into store.
 
-# P.S : @encrypt - DO NOT SET THIS TO true IF YOU WANT TO USE COOKIE DATA SERVER-SIDE.
+P.S : @encrypt - DO NOT SET THIS TO true IF YOU WANT TO USE COOKIE DATA SERVER-SIDE.
 
 Example :
 
