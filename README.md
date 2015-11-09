@@ -21,8 +21,9 @@ _Parameters:_
 **encrypt**&nbsp;&nbsp;&nbsp;_Optional: This key if set to boolean true, will encrypt data that goes into store._      
 
 _P.S :_ **encrypt** - Do not SET this key to **true** if you want to use `cookie` data on the server-side.         
-       
-    
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;    
 
 **1. GET Data** - `keep.set()`      
 
